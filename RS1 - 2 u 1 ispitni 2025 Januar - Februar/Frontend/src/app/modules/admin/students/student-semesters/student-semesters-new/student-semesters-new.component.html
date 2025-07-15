@@ -1,0 +1,31 @@
+<p> {{'NEW-SEMESTER.TITLE' | translate }} {{StudentInfo.firstName}} {{StudentInfo.lastName}}</p>
+
+
+
+<mat-card class="student-form-card">
+
+<form (ngSubmit)="saveSemester()" [formGroup]="semesterForm">
+
+
+  <!-- Date custom field -->
+  <mat-form-field >
+    <mat-label> {{ 'NEW-SEMESTER.DATE' | translate }} </mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="dateOfEnrollment">
+    <mat-datepicker-toggle matSuffix [for]="picker" />
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+
+  <app-my-input-text myControlName="yearOfStudy" (input)="YearChanged($event)" myLabel= "{{ 'NEW-SEMESTER.YEAROFSTUDY' | translate }}" myPlaceholder="Unesite godinu studija"></app-my-input-text>
+  <app-my-dropdown [options]="AcademicYearInfo" myControlName="academicYearId" myLabel="{{ 'NEW-SEMESTER.ACADEMIC' | translate }}"></app-my-dropdown>
+
+  <app-my-input-text myControlName="price" myLabel="{{ 'NEW-SEMESTER.PRICE' | translate }}" myPlaceholder="Unesite cijenu školarine"></app-my-input-text>
+
+  <mat-checkbox formControlName="renewal">{{ 'NEW-SEMESTER.RENEWAL' | translate }}</mat-checkbox>
+
+  <div class="form-buttons">
+    <button [disabled]="semesterForm.invalid" color="primary" mat-raised-button type="submit">Save Changes</button>
+    <button color="warn" mat-raised-button routerLink="/admin/students" type="button">Cancel</button>
+  </div>
+</form>
+</mat-card>

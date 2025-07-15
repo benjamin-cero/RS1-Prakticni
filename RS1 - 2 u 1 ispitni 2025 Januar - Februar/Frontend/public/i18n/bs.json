@@ -1,0 +1,24 @@
+{
+  "APP": {
+    "TITLE": "Dobrodošli u našu aplikaciju",
+    "DESCRIPTION": "Ovo je primjer lokalizacije."
+  },
+  "LOGIN": {
+    "TITLE": "Prijava",
+    "USERNAME_LABEL": "Korisničko ime:",
+    "USERNAME_PLACEHOLDER": "Unesite korisničko ime",
+    "PASSWORD_LABEL": "Šifra:",
+    "PASSWORD_PLACEHOLDER": "Unesite šifru",
+    "SAVE_LOGIN": "Sačuvaj prijavu",
+    "BUTTON": "Prijavi se"
+  },
+  "NEW-SEMESTER": {
+    "TITLE": "Novi semestar za: ",
+    "DATE": "Datum",
+    "YEAROFSTUDY" : "Godina studija",
+    "ACADEMIC" : "Akademska godina",
+    "PRICE" : "Cijena školarine",
+    "RENEWAL" : "Obnova godine"
+  }
+}
+

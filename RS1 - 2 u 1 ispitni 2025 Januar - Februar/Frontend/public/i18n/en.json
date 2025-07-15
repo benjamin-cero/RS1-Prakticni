@@ -1,0 +1,23 @@
+{
+  "APP": {
+    "TITLE": "Welcome to our app",
+    "DESCRIPTION": "This is an example of localization."
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "USERNAME_LABEL": "Username:",
+    "USERNAME_PLACEHOLDER": "Enter username",
+    "PASSWORD_LABEL": "Password:",
+    "PASSWORD_PLACEHOLDER": "Enter password",
+    "SAVE_LOGIN": "Save login",
+    "BUTTON": "Login"
+  },
+  "NEW-SEMESTER": {
+    "TITLE": "New semester for: ",
+    "DATE": "Date",
+    "YEAROFSTUDY" : "Year of study",
+    "ACADEMIC" : "Academic Year",
+    "PRICE" : "Price",
+    "RENEWAL" : "Renewal"
+  }
+}
